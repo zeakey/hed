@@ -1,0 +1,9 @@
+*.caffemodel
+*.solverstate
+*.pyc
+data/
+*~
+*.pt
+*.prototxt
+*.log
+.ipynb_checkpoints/
