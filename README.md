@@ -10,8 +10,9 @@
 4. Download [initial model](http://zhaok-data.oss-cn-shanghai.aliyuncs.com/caffe-model/vgg16convs.caffemodel) and put it
 into `$HED/model/`;
 
-5. Start to train with `cd $HED && python train.py --gpu GPU-ID 2>&1 | tee hed.log`(will generate training/testing network prototxt
-automatically by calling `$HED/model/hed.py`).
+5. Generate network prototxts by `python model/hed.py`;
+
+6. Start to train with `cd $HED && python train.py --gpu GPU-ID 2>&1 | tee hed.log`.
 
 ### For testing:
 1. Download [pretrained model](http://vcl.ucsd.edu/hed/hed_pretrained_bsds.caffemodel) from original repo and put it into `$HED/snapshot/`;
