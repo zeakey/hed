@@ -21,7 +21,7 @@ solver.net.copy_from(args.weights)
 for p in solver.net.params:
   param = solver.net.params[p]
   for i in range(len(param)):
-    print p, "param[%d]: mean=%.5f, std=%.5f"%(i, solver.net.params[p][0].data.mean(), \
+    print p, "param[%d]: mean=%.5f, std=%.5f"%(i, solver.net.params[p][i].data.mean(), \
     solver.net.params[p][0].data.mean())
 solver.solve()
 
